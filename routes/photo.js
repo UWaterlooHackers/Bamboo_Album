@@ -10,13 +10,6 @@
 		var axios = require('axios');
 		var path = require('path');
 
-		//variables for calling microsoft API
-		var uriBase = "https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/analyze";
-		var subscriptionKey = "e59470407d82483288140d96cecb8ef0";
-		
-		// Store to MongoDB Atlas
-		var connectionString = "mongodb+srv://admin:admin@test-zokjp.mongodb.net/test";
-
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true })); 
 router.use(upload.array());
